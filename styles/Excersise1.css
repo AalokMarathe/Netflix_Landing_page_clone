@@ -1,0 +1,557 @@
+@font-face {
+  font-family: "FiraSans-Bold";
+  src: url(/Netflix_Assets/fonts/FiraSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: "FiraSans-Regular";
+  src: url(/Netflix_Assets/fonts/FiraSans-Regular.ttf);
+}
+
+body {
+  background-color: #222222;
+}
+
+.hero {
+  background: url("/Netflix_Assets/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg") no-repeat center center;
+  background-size: cover;
+  -webkit-box-shadow: 20px 20px 20px 20px black inset;
+          box-shadow: 20px 20px 20px 20px black inset;
+}
+
+.hero #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 2.5em;
+}
+
+.hero #nav__left {
+  width: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero #nav__right {
+  font-family: "FiraSans-Regular";
+  font-size: 1em;
+}
+
+.hero #nav__right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+.hero #nav__right ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 1em;
+}
+
+.hero #nav__right ul #li1 #ddl {
+  font-family: "FiraSans-Regular";
+  padding: 0.5em 1em;
+  color: #e1e1e1;
+  background-color: #030302;
+}
+
+.hero #nav__right ul #li2 a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: #e1e1e1;
+  background-color: #e50914;
+  border-radius: 4px;
+}
+
+.hero #hero__section {
+  text-align: center;
+  margin: 0 10em;
+  margin-top: 5em;
+  padding-bottom: 10em;
+}
+
+.hero #hero__section__info h1 {
+  font-family: "FiraSans-Bold";
+  font-size: 3em;
+  color: #e1e1e1;
+}
+
+.hero #hero__section__info #p1 {
+  font-family: "FiraSans-Regular";
+  font-size: 1.2em;
+  color: #e1e1e1;
+}
+
+.hero #hero__section__info #p2 {
+  font-family: "FiraSans-Regular";
+  color: #e1e1e1;
+}
+
+.hero #hero__section__getstarted {
+  display: inline-block;
+  background-color: #e50914;
+}
+
+.hero #hero__section__getstarted input {
+  font-family: "FiraSans-Regular";
+  padding: 1em 0.5em;
+  padding-right: 20em;
+}
+
+.hero #hero__section__getstarted a {
+  font-family: "FiraSans-Regular";
+  text-decoration: none;
+  color: #e1e1e1;
+  padding: 0em 2em;
+  background-color: #e50914;
+}
+
+.TV {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.6em;
+}
+
+.TV #TV__description {
+  margin-top: 5em;
+  margin-left: 10em;
+  width: 40%;
+  padding: 2em;
+}
+
+.TV #TV__description h1 {
+  font-family: "FiraSans-Bold";
+  font-size: 3em;
+  color: #e1e1e1;
+}
+
+.TV #TV__description p {
+  font-family: "FiraSans-Regular";
+  font-size: 1em;
+  color: #e1e1e1;
+}
+
+.TV #TV__vid {
+  margin-top: 3em;
+  margin-right: 10em;
+  width: 40%;
+  padding: 4em;
+}
+
+.TV #TV__vid video {
+  width: 20em;
+}
+
+.download {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.6em;
+}
+
+.download #download__img {
+  margin-top: 2em;
+  margin-left: 10em;
+  width: 40%;
+}
+
+.download #download__img img {
+  width: 30em;
+}
+
+.download #download__description {
+  margin-top: 5em;
+  margin-right: 10em;
+  padding: 2em;
+  width: 40%;
+}
+
+.download #download__description h1 {
+  font-family: "FiraSans-Bold";
+  font-size: 3em;
+  color: #e1e1e1;
+}
+
+.download #download__description p {
+  font-family: "FiraSans-Regular";
+  font-size: 1em;
+  color: #e1e1e1;
+}
+
+.Watch {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.6em;
+}
+
+.Watch #Watch__description {
+  margin-top: 5em;
+  margin-left: 10em;
+  width: 40%;
+  padding: 2em;
+}
+
+.Watch #Watch__description h1 {
+  font-family: "FiraSans-Bold";
+  font-size: 3em;
+  color: #e1e1e1;
+}
+
+.Watch #Watch__description p {
+  font-family: "FiraSans-Regular";
+  font-size: 1em;
+  color: #e1e1e1;
+}
+
+.Watch #Watch__vid {
+  margin-top: 3em;
+  margin-right: 10em;
+  width: 40%;
+  padding: 4em;
+}
+
+.Watch #Watch__vid video {
+  width: 20em;
+}
+
+.children {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.6em;
+}
+
+.children #children__img {
+  margin-top: 2em;
+  margin-left: 10em;
+  width: 40%;
+}
+
+.children #children__img img {
+  width: 30em;
+}
+
+.children #children__description {
+  margin-top: 5em;
+  margin-right: 10em;
+  padding: 2em;
+  width: 40%;
+}
+
+.children #children__description h1 {
+  font-family: "FiraSans-Bold";
+  font-size: 3em;
+  color: #e1e1e1;
+}
+
+.children #children__description p {
+  font-family: "FiraSans-Regular";
+  font-size: 1em;
+  color: #e1e1e1;
+}
+
+.FAQ {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.6em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.FAQ #FAQ__ques {
+  margin: 4em 10em;
+  text-align: center;
+}
+
+.FAQ #FAQ__ques__heading {
+  font-family: "FiraSans-Bold";
+  font-size: 3em;
+  color: #e1e1e1;
+}
+
+.FAQ #FAQ__ques__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.FAQ #FAQ__ques__links a {
+  font-family: "FiraSans-Regular";
+  font-size: 1em;
+  color: #e1e1e1;
+  text-decoration: none;
+  margin: .2em;
+  background-color: #303030;
+  padding: 1em 1em;
+}
+
+.FAQ #FAQ__ques__links a:nth-child(1)::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f0fe";
+  margin-left: 20em;
+}
+
+.FAQ #FAQ__ques__links a:nth-child(2)::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f0fe";
+  margin-left: 13.4em;
+}
+
+.FAQ #FAQ__ques__links a:nth-child(3)::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f0fe";
+  margin-left: 18.3em;
+}
+
+.FAQ #FAQ__ques__links a:nth-child(4)::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f0fe";
+  margin-left: 19.2em;
+}
+
+.FAQ #FAQ__ques__links a:nth-child(5)::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f0fe";
+  margin-left: 14em;
+}
+
+.FAQ #FAQ__ques__links a:nth-child(6)::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f0fe";
+  margin-left: 16.2em;
+}
+
+.FAQ #FAQ__ques__signup {
+  margin-top: 3em;
+}
+
+.FAQ #FAQ__ques__signup p {
+  font-family: "FiraSans-Regular";
+  font-size: 1em;
+  color: #e1e1e1;
+}
+
+.FAQ #FAQ__ques__signup__subbtn {
+  display: inline-block;
+  background-color: #e50914;
+}
+
+.FAQ #FAQ__ques__signup__subbtn input {
+  font-family: "FiraSans-Regular";
+  padding: 1em 0.5em;
+  padding-right: 10em;
+}
+
+.FAQ #FAQ__ques__signup__subbtn a {
+  font-family: "FiraSans-Regular";
+  text-decoration: none;
+  color: #e1e1e1;
+  padding: 0em 2em;
+  background-color: #e50914;
+}
+
+.footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0.6em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer #footer__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  margin: 4em 10em;
+}
+
+.footer #footer__part__call {
+  margin-left: 8em;
+  margin-bottom: 1.5em;
+}
+
+.footer #footer__part__call span {
+  font-family: "FiraSans-Regular";
+  font-size: 1em;
+  color: #757575;
+}
+
+.footer #footer__part__call a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer #footer__part__custli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 7.5em;
+  font-family: "FiraSans-Regular";
+  font-size: 0.8em;
+}
+
+.footer #footer__part__custli ul:nth-child(1) {
+  list-style-type: none;
+}
+
+.footer #footer__part__custli ul:nth-child(1) li {
+  margin-bottom: 0.5em;
+}
+
+.footer #footer__part__custli ul:nth-child(1) li a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer #footer__part__custli ul:nth-child(2) {
+  list-style-type: none;
+}
+
+.footer #footer__part__custli ul:nth-child(2) li {
+  margin-bottom: 0.5em;
+}
+
+.footer #footer__part__custli ul:nth-child(2) li a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer #footer__part__custli ul:nth-child(3) {
+  list-style-type: none;
+}
+
+.footer #footer__part__custli ul:nth-child(3) li {
+  margin-bottom: 0.5em;
+}
+
+.footer #footer__part__custli ul:nth-child(3) li a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer #footer__part__custli ul:nth-child(4) {
+  list-style-type: none;
+}
+
+.footer #footer__part__custli ul:nth-child(4) li {
+  margin-bottom: 0.5em;
+}
+
+.footer #footer__part__custli ul:nth-child(4) li a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer #footer__part__lang {
+  margin-top: 1.5em;
+  margin-left: 6em;
+}
+
+.footer #footer__part__lang ul {
+  list-style-type: none;
+}
+
+.footer #footer__part__lang ul li {
+  margin-bottom: 1.5em;
+}
+
+.footer #footer__part__lang ul li select {
+  font-family: "FiraSans-Regular";
+  padding: 0.5em 1em;
+  color: #757575;
+  background-color: #030302;
+}
+
+.footer #footer__part__lang ul li span {
+  font-family: "FiraSans-Regular";
+  font-size: 0.8em;
+  color: #757575;
+}
+/*# sourceMappingURL=Excersise1.css.map */

@@ -1,0 +1,487 @@
+@font-face {
+    font-family: "FiraSans-Bold";
+    src: url(/Netflix_Assets/fonts/FiraSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "FiraSans-Regular";
+    src: url(/Netflix_Assets/fonts/FiraSans-Regular.ttf);
+}
+
+$colors:(body__clr: rgb(34, 34, 34),
+    primary__clr: rgb(229, 9, 20),
+    secondary__clr:rgb(225, 225, 225),
+    select__bkgclr:rgb(3, 3, 2),
+    card__bgcclr: rgb(0, 0, 0),
+    faq__bgcclr: rgb(48, 48, 48),
+    footer__clr: rgb(117,117,117)
+    );
+
+$font__fira:(f__bold:"FiraSans-Bold",
+    f__regular:"FiraSans-Regular"
+);
+$fontsizes:(size__s:0.8em,
+    size__m:1em,
+    size__l:1.2em,
+    size__xl:2em,
+    size__xxl:3em);
+
+body {
+    background-color: map-get($colors, body__clr);
+}
+
+.hero {
+    background: url("/Netflix_Assets/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_medium.jpg") no-repeat center center;
+    background-size: cover;
+    box-shadow: 20px 20px 20px 20px black inset;
+
+    #nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2em 2.5em;
+
+        &__left {
+            width: 12%;
+            display: flex;
+            align-items: center;
+        }
+
+        &__right {
+            font-family: map-get($font__fira, f__regular);
+            font-size: map-get($fontsizes, size__m);
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                list-style-type: none;
+
+                li {
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin-left: 1em;
+                }
+
+                #li1 {
+                    #ddl {
+                        font-family: map-get($font__fira, f__regular);
+                        padding: 0.5em 1em;
+                        color: map-get($colors, secondary__clr);
+                        background-color: map-get($colors, select__bkgclr);
+                    }
+                }
+
+                #li2 {
+                    a {
+                        text-decoration: none;
+                        padding: 0.5em 1em;
+                        color: map-get($colors, secondary__clr);
+                        background-color: map-get($colors, primary__clr);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    #hero__section {
+        text-align: center;
+        margin: 0 10em;
+        margin-top: 5em;
+        padding-bottom: 10em;
+
+        &__info {
+            h1 {
+                font-family: map-get($font__fira, f__bold);
+                font-size: map-get($fontsizes, size__xxl);
+                color: map-get($colors, secondary__clr);
+            }
+
+            #p1 {
+                font-family: map-get($font__fira, f__regular);
+                font-size: map-get($fontsizes, size__l);
+                color: map-get($colors, secondary__clr);
+            }
+
+            #p2 {
+                font-family: map-get($font__fira, f__regular);
+                color: map-get($colors, secondary__clr);
+            }
+        }
+
+        &__getstarted {
+            display: inline-block;
+            background-color: map-get($colors, primary__clr);
+
+            input {
+                font-family: map-get($font__fira, f__regular);
+                padding: 1em 0.5em;
+                padding-right: 20em;
+            }
+
+            a {
+                font-family: map-get($font__fira, f__regular);
+                font-size: map-get($fontsizes, xl);
+                text-decoration: none;
+                color: map-get($colors, secondary__clr);
+                padding: 0em 2em;
+                background-color: map-get($colors, primary__clr);
+                // border: none 1px map-get($colors , primary__clr );
+            }
+        }
+    }
+}
+
+.TV {
+    background-color: map-get($colors, card__bgcclr);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.6em;
+
+    #TV__description {
+        margin-top: 5em;
+        margin-left: 10em;
+        width: 40%;
+        padding: 2em;
+
+        h1 {
+            font-family: map-get($font__fira, f__bold);
+            font-size: map-get($fontsizes, size__xxl);
+            color: map-get($colors, secondary__clr);
+        }
+
+        p {
+            font-family: map-get($font__fira, f__regular);
+            font-size: map-get($fontsizes, size__m);
+            color: map-get($colors, secondary__clr);
+        }
+    }
+
+    #TV__vid {
+        margin-top: 3em;
+        margin-right: 10em;
+        width: 40%;
+        padding: 4em;
+
+        video {
+            width: 20em;
+        }
+    }
+}
+
+.download {
+    background-color: map-get($colors, card__bgcclr);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.6em;
+
+    #download__img {
+        margin-top: 2em;
+        margin-left: 10em;
+        width: 40%;
+
+        img {
+            width: 30em;
+        }
+    }
+
+    #download__description {
+        margin-top: 5em;
+        margin-right: 10em;
+        padding: 2em;
+        width: 40%;
+
+        h1 {
+            font-family: map-get($font__fira, f__bold);
+            font-size: map-get($fontsizes, size__xxl);
+            color: map-get($colors, secondary__clr);
+        }
+
+        p {
+            font-family: map-get($font__fira, f__regular);
+            font-size: map-get($fontsizes, size__m);
+            color: map-get($colors, secondary__clr);
+        }
+    }
+}
+
+.Watch {
+    background-color: map-get($colors, card__bgcclr);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.6em;
+
+    #Watch__description {
+        margin-top: 5em;
+        margin-left: 10em;
+        width: 40%;
+        padding: 2em;
+
+        h1 {
+            font-family: map-get($font__fira, f__bold);
+            font-size: map-get($fontsizes, size__xxl);
+            color: map-get($colors, secondary__clr);
+        }
+
+        p {
+            font-family: map-get($font__fira, f__regular);
+            font-size: map-get($fontsizes, size__m);
+            color: map-get($colors, secondary__clr);
+        }
+    }
+
+    #Watch__vid {
+        margin-top: 3em;
+        margin-right: 10em;
+        width: 40%;
+        padding: 4em;
+
+        video {
+            width: 20em;
+        }
+    }
+}
+
+.children {
+    background-color: map-get($colors, card__bgcclr);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.6em;
+
+    #children__img {
+        margin-top: 2em;
+        margin-left: 10em;
+        width: 40%;
+
+        img {
+            width: 30em;
+        }
+    }
+
+    #children__description {
+        margin-top: 5em;
+        margin-right: 10em;
+        padding: 2em;
+        width: 40%;
+
+        h1 {
+            font-family: map-get($font__fira, f__bold);
+            font-size: map-get($fontsizes, size__xxl);
+            color: map-get($colors, secondary__clr);
+        }
+
+        p {
+            font-family: map-get($font__fira, f__regular);
+            font-size: map-get($fontsizes, size__m);
+            color: map-get($colors, secondary__clr);
+        }
+    }
+}
+
+.FAQ {
+    background-color: map-get($colors, card__bgcclr);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.6em;
+    justify-content: center;
+
+    #FAQ__ques {
+        margin: 4em 10em;
+        text-align: center;
+
+        &__heading {
+            font-family: map-get($font__fira, f__bold);
+            font-size: map-get($fontsizes, size__xxl);
+            color: map-get($colors, secondary__clr);
+        }
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-family: map-get($font__fira, f__regular);
+                font-size: map-get($fontsizes, size__m);
+                color: map-get($colors, secondary__clr);
+                text-decoration: none;
+                margin: .2em;
+                background-color: map-get($colors, faq__bgcclr);
+                padding: 1em 1em;
+            }
+
+            a:nth-child(1)::after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                content: "\f0fe";
+                margin-left: 20em;
+            }
+
+            a:nth-child(2)::after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                content: "\f0fe";
+                margin-left: 13.4em;
+            }
+
+            a:nth-child(3)::after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                content: "\f0fe";
+                margin-left: 18.3em;
+            }
+
+            a:nth-child(4)::after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                content: "\f0fe";
+                margin-left: 19.2em;
+            }
+
+            a:nth-child(5)::after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                content: "\f0fe";
+                margin-left: 14em;
+            }
+
+            a:nth-child(6)::after {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 400;
+                content: "\f0fe";
+                margin-left: 16.2em;
+            }
+        }
+
+        &__signup {
+            margin-top: 3em;
+            p {
+                font-family: map-get($font__fira, f__regular);
+                font-size: map-get($fontsizes, size__m);
+                color: map-get($colors, secondary__clr);
+            }
+
+            &__subbtn {
+                display: inline-block;
+                background-color: map-get($colors, primary__clr);
+
+                input {
+                    font-family: map-get($font__fira, f__regular);
+                    padding: 1em 0.5em;
+                    padding-right: 10em;
+                }
+
+                a {
+                    font-family: map-get($font__fira, f__regular);
+                    font-size: map-get($fontsizes, xl);
+                    text-decoration: none;
+                    color: map-get($colors, secondary__clr);
+                    padding: 0em 2em;
+                    background-color: map-get($colors, primary__clr);
+                    // border: none 1px map-get($colors , primary__clr );
+                }
+            }
+        }
+    }
+}
+.footer{
+    background-color: map-get($colors, card__bgcclr);
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.6em;
+    justify-content: center;
+    #footer__part{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin: 4em 10em;
+        &__call{
+            margin-left: 8em;
+            margin-bottom: 1.5em;
+            span{
+                font-family: map-get($font__fira, f__regular);
+                    font-size: map-get($fontsizes, size__m);
+                    color: map-get($colors, footer__clr);
+            }
+            a{
+                text-decoration: none;
+                color:  map-get($colors, footer__clr);
+            }
+    }
+    &__custli{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 7.5em;
+        font-family: map-get($font__fira , f__regular );
+        font-size: map-get($fontsizes , size__s );
+        ul:nth-child(1){
+            list-style-type: none;
+            li{
+                margin-bottom: 0.5em;
+                a{
+                    text-decoration: none;
+                    color: map-get($colors, footer__clr);
+                }
+            }
+            
+        }
+        ul:nth-child(2){
+            list-style-type: none;
+            li{
+                margin-bottom: 0.5em;
+                a{
+                    text-decoration: none;
+                    color: map-get($colors, footer__clr);
+                }
+            }
+            
+        }
+        ul:nth-child(3){
+            list-style-type: none;
+            li{
+                margin-bottom: 0.5em;
+                a{
+                    text-decoration: none;
+                    color: map-get($colors, footer__clr);
+                }
+            }
+            
+        }
+        ul:nth-child(4){
+            list-style-type: none;
+            li{
+                margin-bottom: 0.5em;
+                a{
+                    text-decoration: none;
+                    color: map-get($colors, footer__clr);
+                }
+            }
+            
+        }
+    }
+    &__lang{
+        margin-top: 1.5em;
+        margin-left: 6em;
+        ul{
+            list-style-type: none;
+            li{
+                margin-bottom: 1.5em;
+                select{
+                    font-family: map-get($font__fira, f__regular);
+                        padding: 0.5em 1em;
+                        color: map-get($colors, footer__clr);
+                        background-color: map-get($colors, select__bkgclr);
+                }
+                span{
+                    font-family: map-get($font__fira , f__regular );
+        font-size: map-get($fontsizes , size__s );
+        color: map-get($colors , footer__clr );
+                }
+            }
+        }
+    }
+    }
+}
